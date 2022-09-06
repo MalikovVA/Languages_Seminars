@@ -3,9 +3,9 @@
 
 Console.WriteLine ("Введите X Y:");
 string xy = Console.ReadLine ()!;  // "5 7"
-string[] parts = xy.Split (' ');
-int x = int.Parse (parts[0]);
-int y = int.Parse (parts[1]);
+string[] part = xy.Split (' ');
+int x = int.Parse (part[0]);
+int y = int.Parse (part[1]);
 
 // if else if else if else if
 if (x > 0 && y > 0) {
