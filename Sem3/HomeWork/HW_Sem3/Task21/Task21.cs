@@ -11,7 +11,7 @@ int x2 = int.Parse(part2[0]);
 int y2 = int.Parse(part2[1]);
 int z2 = int.Parse(part2[2]);
 
-Console.WriteLine($"{(double)Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2) + Math.Pow(z1 - z2, 2))}");
+Console.WriteLine($"{Math.Round((double)Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2) + Math.Pow(z1 - z2, 2)), 2)}");
 
 
 
