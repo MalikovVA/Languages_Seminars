@@ -6,7 +6,7 @@ Console.WriteLine("Введите размер массива: ");
 int[] numbers = CreateRandomArray(int.Parse(Console.ReadLine()!));
 PrintArray(numbers);
 Console.WriteLine();
-int indexSum = FindOddIndexSum(numbers, 0);
+int indexSum = FindOddIndexSum(numbers);
 Console.WriteLine("В данном масиве сумма чисел, находящихся на нечетных местах равна " + indexSum);
 
 int[] CreateRandomArray(int size)
@@ -25,7 +25,7 @@ void PrintArray(int[] numbers)
         System.Console.Write($"{number} ");
 }
 
-static int FindOddIndexSum(int[] numbers, int sum)
+static int FindOddIndexSum(int[] numbers)
 {
     int sum = 0;
     for (int i = 1; i < numbers.Length; i += 2)
