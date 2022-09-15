@@ -6,8 +6,8 @@ Console.WriteLine("Введите размер массива: ");
 int[] numbers = CreateRandomArray(int.Parse(Console.ReadLine()!));
 PrintArray(numbers);
 Console.WriteLine();
-int max = FindMax(numbers, numbers[0]);
-int min = FindMin(numbers, numbers[0]);
+int max = FindMax(numbers);
+int min = FindMin(numbers);
 int substraction = max - min;
 
 Console.WriteLine("В данном масиве самое большое число " + max + ", а самое маленькое " + min + " разница между ними : " + substraction);
@@ -28,23 +28,25 @@ void PrintArray(int[] numbers)
         System.Console.Write($"{number} ");
 }
 
-static int FindMax(int[] numbers, int Max)
+static int FindMax(int[] numbers)
 {
+    int max = numbers[0];
     for (int i = 0; i < numbers.Length; i++)
     {
-        if (numbers[i] > Max)
-            Max = numbers[i];
+        if (numbers[i] > max)
+            max = numbers[i];
     }
-    return Max;
+    return max;
 }
 
-static int FindMin(int[] numbers, int Min)
+static int FindMin(int[] numbers)
 {
+    int min = numbers[0];
     for (int i = 0; i < numbers.Length; i++)
     {
-        if (numbers[i] < Min)
-            Min = numbers[i];
+        if (numbers[i] < min)
+            min = numbers[i];
     }
-    return Min;
+    return min;
 }
 

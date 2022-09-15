@@ -27,10 +27,10 @@ void PrintArray(int[] numbers)
 
 static int FindOddIndexSum(int[] numbers, int sum)
 {
+    int sum = 0;
     for (int i = 1; i < numbers.Length; i += 2)
     {
-        int Sum = numbers[i];
-        sum = Sum + sum;
+        sum += numbers[i];
     }
     return sum;
 }
