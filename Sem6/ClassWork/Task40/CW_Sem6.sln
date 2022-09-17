@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sem6CW", "Sem6CW\Sem6CW.csproj", "{3A758700-B5C7-4E7A-B92B-BFE3C869066D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task40", "Sem6CW\Task40.csproj", "{3A758700-B5C7-4E7A-B92B-BFE3C869066D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task42", "Task42\Task42.csproj", "{7F31985F-530E-4604-8141-62ADA8ECEE67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task42", "Task42\Task42.csproj", "{7F31985F-530E-4604-8141-62ADA8ECEE67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
