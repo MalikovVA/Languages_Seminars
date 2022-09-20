@@ -10,17 +10,17 @@ double k2 = Double.Parse(Console.ReadLine()!);
 Console.Write("Введите b2: ");
 double b2 = Double.Parse(Console.ReadLine()!);
 
-if (k1 == k2)
+if (k1 == k2 && b1 == b2)
 {
     Console.WriteLine("Ваши прямые параллельные");
 }
-else if ((k1 / k2) == (b1 / b2))
+else if (k1 == k2)
 {
     Console.WriteLine("Ваши прямые совпадают");
 }
 else
 {
-    double x = Math.Round(((b2 - b1) / (k1 - k2)), 3);
-    double y = Math.Round((k1 * x + b1), 3);
-    Console.WriteLine($"Пересечение в точке: ({x};{y})");
+    double x = (b2 - b1) / (k1 - k2);
+    double y = k1 * x + b1;
+    Console.WriteLine($"Пересечение в точке: ({Math.Round(x, 3)};{Math.Round(y, 3)})");
 }
