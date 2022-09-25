@@ -1,7 +1,5 @@
 ﻿// Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
-using System;
-
 int height = EnterInt("Enter height: ");
 int width = EnterInt("Enter width: ");
 
