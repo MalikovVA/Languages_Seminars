@@ -45,7 +45,8 @@ void Print3DArray(int[,,] array3D)
         {
             for (int k = 0; k < array.GetLength(2); k++)
             {
-                Console.Write($"{array[i, j, k]}({i},{j},{k}) ");
+                //Console.Write($"{array[i, j, k]}({i},{j},{k}) ");
+                Console.Write($"{k+1}-ый слой {array[i, j, k]}({i},{j})  ");
             }
             Console.WriteLine();
         }
